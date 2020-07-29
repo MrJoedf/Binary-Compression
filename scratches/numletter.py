@@ -26,6 +26,8 @@ def decompress(string):
                 newString += string[i] * int(string[i + 1])
             else:
                 newString+=string[i]
+    newString+=string[len(string)-1]
+
     return(newString)
 
 #test = open('binary-output.txt', 'r')
